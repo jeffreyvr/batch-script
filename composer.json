@@ -1,0 +1,38 @@
+{
+    "name": "jeffreyvr/batch-script",
+    "description": "Run code in batches",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeffrey van Rossum",
+            "email": "jeffrey@vanrossum.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "automattic/jetpack-autoloader": "^2.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jeffreyvr\\BatchScript\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.0"
+        },
+        "allow-plugins": {
+            "automattic/jetpack-autoloader": true
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.2"
+    },
+    "scripts": {
+        "format": [
+            "./vendor/bin/pint"
+        ]
+    }
+}
